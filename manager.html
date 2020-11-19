@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Bookmark Manager
+        </title>
+        <link type="text/css" rel="stylesheet" href="css/manager.css" />
+    </head>
+    <body>
+        <script src="js/manager.js"></script>
+        <div class="cont" id="header"><h3>My Bookmarks</h3></div>
+        <div class="cont" id="search">
+            <div class="left">
+                <button id="nav">
+                    Navigator
+                </button>
+                <button id="later">
+                    Read Later
+                </button>
+                <button id="recent">
+                    Recently Added
+                </button>
+            </div>
+            <div class="right">
+                <input placeholder="Search" id="searchbar"/>
+                <select id="searchoption" name="choose">
+                    <option value="byTitle">Title</option>
+                    <option value="byTag">Tags</option>
+                    <option value="byDomain">Domain</option>
+                </select>
+            </div> 
+        </div>
+
+        <div class = "cont" id="navpanel"> 
+            <!--
+                <div id="currfolder" >Current</div>
+            <dic id="contents" style="margin-left: 20%;border: 1px solid salmon;">
+                <p>sjdhjisj</p>
+                <p>sjdhjisj</p>
+                <p>sjdhjisj</p>
+            </dic>-->   
+            <div id="parent">                
+                <text style="line-height: 50px;height: 50px;">Main</text>
+                <img class="icon" title = "Go Back" src="./css/goback.png">
+                <img class="iconr" title = "Add Folder" src="./css/addfolder.png">                
+                
+            </div>
+            <div id="sub" style="margin-left: 5%;width:70%">
+                <!--DISPLAY SPACE FOR FOLDER NAVIGATION-->
+                <div id="marker"></div>
+            </div>  
+            
+        </div>
+
+
+
+        <div class = "cont" id="latpanel">
+            <div id="latmsg" style="display: none;font-size: medium;margin-left:10px">None Added Yet!</div>            
+        </div>
+        <div class = "cont" id="recpanel">
+            <div id="recmsg" style="display: none;font-size: medium;margin-left:10px">None Yet!</div>
+        </div>
+        <div class="cont" id="searchpanel">
+            <p>Search Results</p>
+            <div id="sr"></div>
+            <p>Similar Bookmarks</p>
+            <div id="sb"></div>
+        </div>
+
+    </body>
+</html>

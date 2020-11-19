@@ -1,0 +1,147 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;    
+}
+
+a:visited { text-decoration: none;  }
+a:hover { text-decoration: none; color:teal; }
+a:focus { text-decoration: none;  }
+
+.cont{
+    padding: 10px 15px;
+}
+
+#header{
+    color: white;
+    background: linear-gradient(-45deg, #42e0c6, #33ad99, #237a6c, #13423a);
+    background-size: 400% 400%;
+    border-bottom: 5px solid white;
+	animation: gradient 15s ease infinite;
+    font-size: 2.5em;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+button{
+    background-color: white;
+    border: 1px white;
+    font-size: large;
+    padding: 10px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: darkslategray;
+}
+
+button:hover{
+    border: 1px solid teal
+}
+
+button:focus{
+    color: teal;
+}
+
+#search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 40%
+}
+
+.right{
+    width: 50%
+}
+
+#searchbar{
+    width: 80%;
+    padding: 10px;
+}
+
+#searchoption{
+    width: 8em;
+    padding: 10px;
+    color: cadetblue;
+}
+
+select{
+    padding: 5px;
+}
+
+.rlunit{
+    margin: 10px 5px;
+    padding: 10px;;
+}
+
+img{
+    cursor: pointer;
+}
+
+.icon{
+    float:left;line-height:50px;height:50px;
+}
+
+.iconr{
+    float:right;line-height:50px;height:50px;
+}
+
+.hoverhide{
+    display: none;
+}
+
+.caption{
+    line-height: 50px;height: 50px;cursor: pointer;
+}
+
+.title{
+    color: darkslategray;
+    font-size: large;
+}
+
+.url{
+    color: gray;
+    font-size: small;
+}
+
+#navpanel{
+    display: block;
+    height: 60%;
+    padding: 10px;
+    margin: 20px;
+    font-size: medium;
+}
+
+#recpanel{
+    display: none;
+}
+
+#latpanel{
+    display: none;
+}
+
+#searchpanel{
+    display: none;
+    font-size: 2em;
+}

@@ -1,0 +1,236 @@
+html{
+    width: 500px; 
+    height: auto;  
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    margin: 5px 2px;
+}
+
+#message{
+    text-align: center;
+    font-size: small;
+    display: none;
+    line-height: 3em;
+    color: slategray;
+    margin-left: 5px;
+    text-shadow: teal;
+}
+
+#importhead{
+    color: teal;
+    display: inline-block;
+    border: 2px solid white;
+    width: 45%;
+    text-align: center
+}
+
+#importhead:hover{
+    color: darkslategray;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+
+.recs{
+    display: block;
+    font-size: 15px;
+    
+}
+
+#recent{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+}
+
+#readlater{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+}
+
+.recd{
+    width: 30%;
+    cursor: pointer;
+}
+
+.url{
+    display: block;
+    color: gray;
+    font-size: smaller;
+}
+
+a{
+    overflow-wrap: break-word;
+}
+
+.sect{
+    margin: 3px;
+    padding: 1px;
+    color: teal;
+}
+
+.textb{
+    color: darkslategray;
+}
+
+.labels{
+    color: darkslategray;
+    display: inline-block;
+    width:30%;
+    padding: 2px;
+    margin: 2px 4px;
+}
+
+#addhead{
+    color: teal;
+    display: inline-block;
+    border: 2px solid white;
+    width: 45%;
+    text-align: center
+}
+
+#addhead:hover{
+    color: darkslategray;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+
+#addform{
+    display: none;
+}
+
+.asubmit{
+    width: auto;
+    font-size: medium;
+    line-height: 2em;
+    border: none;
+    background-color: rgb(35, 146, 128);
+    color: white;
+    padding: 6px 20px;  
+    margin: 2px 2px;
+    border-radius: 10px;
+}
+
+#manage{
+    width: 95%;
+    font-size: medium;
+    border: 2px solid rgb(35, 146, 128);
+    background-color: white;
+    color: darkslategray;
+    padding: 6px 5px;  
+    margin: 15px 1px;
+    border-radius: 10px;
+}
+
+#manage:hover{
+    background-color: rgb(35, 146, 128);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.add{
+    display: inline-block;
+    width: 60%;
+    padding: 6px 5px;
+    margin: 5px 2px;
+    border: 1px solid gray;
+    
+}
+
+.tagword{
+    border-radius: 15px;
+    background-color: rgb(211, 231, 231);
+    color: rgb(78, 83, 87);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: small;
+    line-height: 3em;
+}
+
+#taghold{
+    width: 450px;
+    height: auto;
+    padding: 2px;
+    margin: 2px 2px 7px;    
+    word-break:break-all;
+    display: none;
+}
+
+#home{
+    text-align: center;
+    background-color: rgb(35, 146, 128);
+    color: ivory;
+    padding: 10px;
+}
+
+#tags{
+    font-size: large;
+}
+
+#rt{
+    font-size: large;
+}
+
+#later{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#recently{
+    display: flex;
+    justify-content: space-between;
+}
+
+#showalllater{
+    background-color:rgb(255, 255, 255);
+	border:2px solid white;
+    display:block;
+    cursor: pointer;
+    color:gray;
+    font-size:small;
+	padding:5px 5px;
+}
+#showalllater:hover {
+    color: rgb(69, 73, 69);
+    border:2px solid teal;
+    border-radius: 10px;
+}
+
+#showallrecent{
+    background-color:rgb(255, 255, 255);
+	border:2px solid white;
+    display:block;
+    cursor: pointer;
+    color:gray;
+    font-size:small;
+	padding:5px 5px;
+}
+
+#showallrecent:hover {
+    color: rgb(69, 73, 69);
+    border:2px solid teal;
+    border-radius: 10px;
+}
+
+.left{
+    display: inline-block;
+}
+
+.right{
+    display: inline-block;
+}

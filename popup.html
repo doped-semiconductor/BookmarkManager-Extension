@@ -1,0 +1,109 @@
+<html>    
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/popup.css" />        
+    </head>
+    <body>
+        <script src="js/content.js"></script>
+        <script src="js/popup.js"></script>
+
+        <div id="home">
+            <h3>Bookmark Manager</h3>
+        </div>
+
+        <div class="sect" id="addhead">
+            <p>Add Page As Bookmark </p>            
+        </div>
+
+        <div class="sect" id="importhead">
+            <p>Import Bookmarks</p>
+        </div>
+
+        <div class="sect" id="message">
+            <!--RESPONSE TEXT HERE-->
+        </div>
+
+        <div class = "sect" id="tags">
+            Tags
+            <text id="tagmsg" style="font-size:small;padding-left: 10px;">(Loading)</text>
+        </div> 
+
+        <!--invisible tag holder-->
+        <div id="taghold">
+            <text id="tend"></text>
+        </div>
+        <!--ends--> 
+
+        <div class="sect" id="addform">                       
+            <label class="labels">Title:</label>
+            <input class="add" id="title" />
+            <br>
+            <label class="labels">URL:</label>
+            <input class="add" id="url" />
+            <br>            
+            <label class="labels">Tags:</label>
+            <input class="add" id="tagbar" placeholder="Add your own tags" />
+            <br>
+            <label class="labels">Folder:</label>
+            <select class="add" id="parent" name="choose">
+            </select>
+            <!--<input class="add" id="parent" />-->
+            
+            <label class="labels"></label>
+            
+                <button class="asubmit" id="ab1">Add</button>
+                <button class="asubmit" id="ab2">Add and Read Later</button>
+                       
+        </div>
+        
+        <div class = "sect" id="recently">
+            <div class="left" id="rt">Recently Added</div>
+            <div class="right"><button id = "showallrecent">Show All</button></div>
+        </div> 
+
+        <div class = "sect" id="recent">
+            <div class="recd" id="r1">
+                <a class="recs" id="t1"></a>
+                <a class="url" id="u1"></a>
+            </div>
+            <div class="recd" id="r2">
+                <a class="recs" id="t2"></a>
+                <a class="url" id="u2"></a>                
+            </div>   
+            <div class="recd" id="r3">
+                <a class="recs" id="t3"></a>
+                <a class="url" id="u3"></a>                
+            </div>
+        </div>   
+        
+        <div class = "sect" id="later">
+            <div class="left">Read Later</div>
+            <div class="right"><button id = "showalllater">Show All</button></div>
+        </div> 
+
+        <div class="sect" id="rlMsg" style="display: none; font-size: small;">
+            Looks like you need to add content here!
+        </div>
+
+        <div class="sect" id="readlater">
+            <div class="recd" id="l1">
+                <a class="recs" id="tt1"></a>
+                <a class="url" id="uu1"></a>
+            </div>
+            <div class="recd" id="l2">
+                <a class="recs" id="tt2"></a>
+                <a class="url" id="uu2"></a>               
+            </div>   
+            <div class="recd" id="l3">
+                <a class="recs" id="tt3"></a>
+                <a class="url" id="uu3"></a>               
+            </div>
+        </div>
+
+        <div class = "sect">
+            <button id="manage">Manage All Bookmarks</button>
+        </div>
+            
+            
+               
+    </body>
+</html>
